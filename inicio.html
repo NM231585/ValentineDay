@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Iloveyou</title>
+</head>
+<body>
+    <!-- Pantalla de bienvenida -->
+    <div class="welcome-overlay" id="welcomeOverlay">
+        <div class="welcome-content">
+            <h1 class="welcome-title">Bienvenida Mi Amor</h1>
+            <p class="welcome-message">Preparé algo especial para ti...</p>
+            <button class="welcome-button" id="welcomeButton">
+                <span>Descubrir</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 4L10 16M10 16L16 10M10 16L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <section>
+        <div class="mainContainer">
+            <!-- Contenido de texto a la izquierda -->
+            <div class="textContent">
+                <h1 class="typewriter" id="title">Feliz 14 de Febrero</h1>
+                <p class="typewriter" id="paragraph1">Te amo más de lo que las palabras pueden expresar. Cada día a tu lado es un regalo que atesoro en mi corazón.</p>
+                <p class="typewriter" id="paragraph2">Gracias por llenar mi vida de amor, risas y momentos inolvidables que guardaré por siempre.</p>
+                <p class="typewriter quote" id="quote">"El amor no se mira, se siente, y aún más cuando ella está junto a ti."</p>
+                <br>
+                <br>
+            </div>
+
+            <!-- Video a la derecha -->
+            <div class="videoContainer">
+                <video autoplay muted loop>
+                    <source src="img/arbol.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contador de días -->
+    <div class="countdown-container">
+        <h2 class="countdown-title">Tiempo que llevamos compartiendo juntos</h2>
+        <div class="countdown">
+            <div class="time-unit">
+                <span class="time-value" id="years">0</span>
+                <span class="time-label">Años</span>
+            </div>
+            <div class="time-unit">
+                <span class="time-value" id="months">0</span>
+                <span class="time-label">Meses</span>
+            </div>
+            <div class="time-unit">
+                <span class="time-value" id="days">0</span>
+                <span class="time-label">Días</span>
+            </div>
+            <div class="time-unit">
+                <span class="time-value" id="hours">0</span>
+                <span class="time-label">Horas</span>
+            </div>
+            <div class="time-unit">
+                <span class="time-value" id="minutes">0</span>
+                <span class="time-label">Minutos</span>
+            </div>
+            <div class="time-unit">
+                <span class="time-value" id="seconds">0</span>
+                <span class="time-label">Segundos</span>
+            </div>
+        </div>
+        <div class="countdown-line"></div>
+    </div>
+
+    <script src="js/countdown.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/typewriter.js"></script>
+</body>
+</html>
